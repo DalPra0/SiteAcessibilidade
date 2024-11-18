@@ -28,5 +28,17 @@ Tela Questionario:
       - É um questionario sobre a importancia da acessibilidade em sites atualmente, utilizando perguntas e respostas dos conteudos do site, como os artigos e os videos
       - Perguntas:
 
+- Tela Configurações:
+- Uma tela que permite ao usuario configurar o site, como:
+- Alterar a cor do site (para daltonicos)
+- Modo Escuro
+- Contraste de Cores Melhorado
+- Ajuste de Espaçamento (para Dislexia e Leitura Difícil)
+- Navegação por Teclado
+- Feedback Visual e Auditivo (quando clicar em qualquer botao, tocar um mini som)
+- Alterar o tamanho da fonte (para idosos)
+- TTS (para surdos)
+
+
 - Tela Avaliacoes:
 - Uma tela que contém todas as avaliações dos usuarios, para mostrar a quantidade de pessoas que avaliaram o site
