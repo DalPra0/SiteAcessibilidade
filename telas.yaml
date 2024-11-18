@@ -1,0 +1,32 @@
+Tela Videos:
+- Igual a tela de artigos
+
+- Tela graficos IBGE:
+  - Uma tela contendo todos os graficos do ibge, para mostrar a quantidade de pessoas com deficiencia
+
+Tela Questionario:
+- É uma tela que conta com varias perguntas, que serao enviadas para meu email utilizando o staticforms
+- Entradas de dados:
+  - Nome
+  - Sobrenome
+  - Email
+  - Idade
+  - Sexo
+  - ComboBox:
+    - Duvida:
+      - Caixa de texto: Titulo: Como usar o site?
+      - Botão de enviar
+    - Avaliação:
+      - Caixa de texto: Titulo: Qual a sua avaliação do site?
+      - Estrelas: Marcar quantas estrelas
+      - Com essa avaliação, adicionar no meu site em uma nova pagina
+      - Botão de enviar
+    - Sugestão:
+      - Caixa de texto: Titulo: Sugestão para o site
+      - Botão de enviar
+    - Responder questionario sobre o conteudo do site:
+      - É um questionario sobre a importancia da acessibilidade em sites atualmente, utilizando perguntas e respostas dos conteudos do site, como os artigos e os videos
+      - Perguntas:
+
+- Tela Avaliacoes:
+- Uma tela que contém todas as avaliações dos usuarios, para mostrar a quantidade de pessoas que avaliaram o site

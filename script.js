@@ -1,7 +1,7 @@
 // Dados fictícios para pesquisa
 const database = [
-    { type: "artigo", title: "Acessibilidade na Web", link: "artigos.html#artigo1" },
-    { type: "artigo", title: "Lei Brasileira de Inclusão", link: "artigos.html#artigo2" },
+    { type: "artigo", title: "eMAG_CONTEUDISTA_MOD_1", link: "artigos.html#artigo1" },
+    { type: "artigo", title: "eMAG_CONTEUDISTA_MOD_2", link: "artigos.html#artigo2" },
     { type: "video", title: "Vídeo sobre Tecnologia Assistiva", link: "videos-podcasts.html#video1" },
     { type: "podcast", title: "Podcast: Barreiras Digitais", link: "videos-podcasts.html#podcast1" }
 ];
