@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site acessível com introdução à acessibilidade na vida cotidiana.">
+    <title>Início - Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html" aria-current="page">Página Inicial</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="videos-podcasts.html">Vídeos e Podcasts</a></li>
+                <li><a href="questionario.html">Questionário</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Pesquisar..." 
+                    aria-label="Digite sua pesquisa aqui"
+                >
+                <button id="searchButton" aria-label="Clique para pesquisar">Pesquisar</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Bem-vindo ao Site Acessível</h1>
+            <p>
+                Nosso objetivo é promover a acessibilidade digital e incluir todas as pessoas, 
+                independentemente de suas limitações. Este site foi desenvolvido com base nas diretrizes 
+                <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> e no 
+                <abbr title="Modelo de Acessibilidade em Governo Eletrônico">eMAG</abbr>, garantindo 
+                uma navegação acessível a todos.
+            </p>
+        </section>
+        <section class="content">
+            <h2>O que é acessibilidade na Web?</h2>
+            <p>
+                A acessibilidade na Web busca eliminar barreiras digitais, garantindo que todas as pessoas 
+                possam acessar, entender e interagir com os conteúdos e funcionalidades de sites e aplicativos.
+            </p>
+            <p>
+                No Brasil, cerca de 45 milhões de pessoas apresentam algum tipo de deficiência, segundo o 
+                IBGE. Isso representa 23,9% da população, que pode se beneficiar de sites acessíveis para 
+                estudar, trabalhar e acessar informações com autonomia.
+            </p>
+        </section>
+        <section class="benefits">
+            <h2>Benefícios de um site acessível</h2>
+            <ul>
+                <li>Inclusão social e digital.</li>
+                <li>Maior alcance e visibilidade para o conteúdo.</li>
+                <li>Atendimento às legislações brasileiras, como o Decreto nº 5.296/2004.</li>
+                <li>Melhor usabilidade para todas as pessoas, incluindo idosos e usuários com conexões lentas.</li>
+            </ul>
+        </section>
+        <section id="searchResults">
+            <!-- Os resultados da pesquisa serão exibidos aqui -->
+        </section>
+    </main>
+    <footer class="fixed-footer">
+        <p>&copy; 2024 Site Acessível. Desenvolvido para promover a inclusão digital.</p>
+    </footer>
+</body>
+</html>

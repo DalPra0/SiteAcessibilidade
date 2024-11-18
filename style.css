@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #005f99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.menu li a:hover,
+.menu li a[aria-current="page"] {
+    background-color: #003f66;
+    border-radius: 5px;
+}
+
+/* Barra de pesquisa na navbar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ffffff;
+    color: #005f99;
+    font-size: 14px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #dddddd;
+    color: #003f66;
+}
+
+/* Conteúdo principal */
+main {
+    text-align: center;
+    margin: auto;
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+}
+
+h1, h2 {
+    color: #005f99;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Resultados da pesquisa */
+#searchResults {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    display: none; /* Oculta até haver resultados */
+}
+
+/* Rodapé fixo */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #005f99;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para lista de artigos */
+.article-item {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.article-item h2 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #005f99;
+}
+
+.article-item a {
+    color: #005f99;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.article-item a:hover {
+    text-decoration: underline;
+}
