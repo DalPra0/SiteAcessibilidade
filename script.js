@@ -1,4 +1,3 @@
-// Dados fictícios para pesquisa
 const database = [
     { type: "artigo", title: "eMAG_CONTEUDISTA_MOD_1", link: "artigos.html#artigo1" },
     { type: "artigo", title: "eMAG_CONTEUDISTA_MOD_2", link: "artigos.html#artigo2" },
@@ -6,7 +5,6 @@ const database = [
     { type: "podcast", title: "Podcast: Barreiras Digitais", link: "videos-podcasts.html#podcast1" }
 ];
 
-// Função para pesquisar
 function search() {
     const query = document.getElementById("searchInput").value.toLowerCase();
     const results = database.filter(item =>
@@ -14,7 +12,7 @@ function search() {
     );
 
     const resultsContainer = document.getElementById("searchResults");
-    resultsContainer.innerHTML = ""; // Limpa resultados anteriores
+    resultsContainer.innerHTML = "";
 
     if (results.length > 0) {
         results.forEach(item => {
@@ -32,5 +30,4 @@ function search() {
     }
 }
 
-// Vincula o evento ao botão de pesquisa
 document.getElementById("searchButton").addEventListener("click", search);
