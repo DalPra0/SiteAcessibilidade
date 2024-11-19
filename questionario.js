@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     formTipo.addEventListener("change", () => {
         const selected = formTipo.value;
-        formExtra.innerHTML = ""; // Limpa conteúdo anterior
+        formExtra.innerHTML = "";
 
         if (selected === "duvida") {
             formExtra.innerHTML = `
