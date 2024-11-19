@@ -2,18 +2,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     const articlesList = document.getElementById("articlesList");
 
     try {
-        // Requisição para obter a lista de arquivos da pasta 'artigos'
         const response = await fetch("/artigos");
-        const files = await response.json(); // Espera um JSON com a lista de arquivos
+        const files = await response.json();
 
         if (files.length > 0) {
             files.forEach(file => {
-                if (file.endsWith(".pdf")) { // Apenas exibe PDFs
+                if (file.endsWith(".pdf")) {
                     const articleDiv = document.createElement("div");
                     articleDiv.className = "article-item";
 
                     const articleTitle = document.createElement("h2");
-                    articleTitle.textContent = file.replace(".pdf", ""); // Nome do arquivo sem extensão
+                    articleTitle.textContent = file.replace(".pdf", "");
 
                     const viewLink = document.createElement("a");
                     viewLink.href = `/artigos/${file}`;
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
                     articleDiv.appendChild(articleTitle);
                     articleDiv.appendChild(viewLink);
-                    articleDiv.appendChild(document.createTextNode(" | ")); // Separador
+                    articleDiv.appendChild(document.createTextNode(" | "));
                     articleDiv.appendChild(downloadLink);
 
                     articlesList.appendChild(articleDiv);
