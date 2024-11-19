@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const applySettings = document.getElementById("applySettings");
     const clickSound = new Audio("sounds/click.mp3");
 
-    // Carrega configurações do localStorage
     const loadSettings = () => {
         if (localStorage.getItem("daltonismo") === "true") document.body.classList.add("daltonismo");
         if (localStorage.getItem("darkMode") === "true") document.body.classList.add("dark-mode");
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (localStorage.getItem("fontSize")) document.body.style.fontSize = `${localStorage.getItem("fontSize")}px`;
     };
 
-    // Salva as configurações no localStorage
     const saveSettings = () => {
         localStorage.setItem("daltonismo", daltonismoMode.checked);
         localStorage.setItem("darkMode", darkMode.checked);
@@ -28,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("fontSize", fontSize.value);
     };
 
-    // Aplica configurações
     applySettings.addEventListener("click", () => {
         document.body.classList.toggle("daltonismo", daltonismoMode.checked);
         document.body.classList.toggle("dark-mode", darkMode.checked);
@@ -37,14 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.fontSize = `${fontSize.value}px`;
         saveSettings();
 
-        // Ativa feedback auditivo
         if (feedback.checked) {
             document.querySelectorAll("button, input, select").forEach(el => {
                 el.addEventListener("click", () => clickSound.play());
             });
         }
 
-        // TTS: Lê texto ao passar o mouse
         if (tts.checked) {
             document.body.addEventListener("mouseover", (e) => {
                 if (e.target.innerText) {
@@ -55,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Exibe comandos de teclado
     if (keyboardNavigation.checked) {
         const keyboardHints = document.createElement("div");
         keyboardHints.className = "keyboard-hints";
@@ -68,5 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
         keyboardHints.style.display = "block";
     }
 
-    loadSettings(); // Carrega configurações ao carregar a página
+    loadSettings();
 });
