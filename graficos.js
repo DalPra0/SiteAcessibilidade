@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupImage = document.getElementById("popupImage");
     const closePopup = document.getElementById("closePopup");
 
-    // Dados dos gráficos
     const charts = [
         {
             filename: "Tabela 1.1 (Pessoas_Geo)_grafico.png",
@@ -53,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
-    // Renderiza os gráficos na página
     charts.forEach(chart => {
         const chartItem = document.createElement("div");
         chartItem.className = "chart-item";
@@ -61,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const img = document.createElement("img");
         img.src = `tabelas/${chart.filename}`;
         img.alt = `Gráfico: ${chart.title}`;
-        img.addEventListener("click", () => openPopup(img.src, img.alt)); // Adiciona evento para abrir o popup
-
+        img.addEventListener("click", () => openPopup(img.src, img.alt));
+        
         const details = document.createElement("div");
         details.className = "chart-details";
         details.innerHTML = `
@@ -75,14 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
         chartsList.appendChild(chartItem);
     });
 
-    // Função para abrir o popup
     function openPopup(src, alt) {
         popupImage.src = src;
         popupImage.alt = alt;
         imagePopup.style.display = "flex";
     }
 
-    // Fecha o popup ao clicar no botão "X" ou fora da imagem
     closePopup.addEventListener("click", () => {
         imagePopup.style.display = "none";
     });
